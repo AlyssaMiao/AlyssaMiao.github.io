@@ -2,7 +2,7 @@
 url: https://alyssamiao.github.io/
 safe: true
 lsi: false
-exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+exclude: [CNAME]
 kramdown:
   input: GFM
   hard_wrap: false
