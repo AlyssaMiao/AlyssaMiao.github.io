@@ -1,5 +1,5 @@
 # General Jekyll Config
-url: http://www.codeography.com
+url: https://alyssamiao.github.io/
 safe: true
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
