@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>The Bakery List for March to July</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
+<title>The Bakery List for March to July</title><link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic' rel='stylesheet' type='text/css' /><link href='https://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:  #ffffff; --text-color:  #333333; --code-block-bg-color: inherit; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
 a:active, a:hover { outline: 0px; }
@@ -134,71 +134,55 @@ a.md-print-anchor { border: none !important; display: inline-block !important; p
 table tr th { border-bottom-width: 0px; }
 
 
+@include-when-export url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
+@include-when-export url(https://fonts.googleapis.com/css?family=Raleway:600,400&subset=latin,latin-ext);
+
+@charset "UTF-8";
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: normal;
+	font-weight: normal;
+	src: url(file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-regular.otf);
+}
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: normal;
+	font-weight: bold;
+	src: url(file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bold.otf);
+}
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: italic;
+	font-weight: normal;
+	src: url(file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-italic.otf);
+}
+@font-face {
+	font-family: 'TeXGyreAdventor';
+	font-style: italic;
+	font-weight: bold;
+	src: url(file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/gothic/texgyreadventor-bolditalic.otf);
+}
+
 :root {
-    --side-bar-bg-color: #fafafa;
-    --control-text-color: #777;
+	--window-border: none;
+	--typora-center-window-title: true;
+	--active-file-bg-color: #f3f3f3;
+	--bg-color: #fcfcfc;
+	--control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Open Sans Regular'),url('file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/github/400.woff') format('woff')
+.mac-seamless-mode #typora-sidebar {
+	top: var(--mac-title-bar-height);
+	padding-top: 0;
+	height: auto;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Open Sans Italic'),url('file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/github/400i.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Open Sans Bold'),url('file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/github/700.woff') format('woff')
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Open Sans Bold Italic'),url('file:///Users/alyssamiao/Library/Application%20Support/abnerworks.Typora/themes/github/700i.woff') format('woff')
-}
-
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: rgb(51, 51, 51);
-    line-height: 1.6;
-}
-
+html,
+body,
 #write{
-    max-width: 860px;
-  	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
-	padding-top: 20px;
-    padding-bottom: 100px;
-}
-#write > ul:first-child,
-#write > ol:first-child{
-    margin-top: 30px;
-}
-
-body > *:first-child {
-    margin-top: 0 !important;
-}
-body > *:last-child {
-    margin-bottom: 0 !important;
-}
-a {
-    color: #4183C4;
+	background: #fcfcfc;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Raleway', "STHeiti", sans-serif;
+	font-weight: 300;
 }
 h1,
 h2,
@@ -206,344 +190,351 @@ h3,
 h4,
 h5,
 h6 {
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    line-height: 1.4;
-    cursor: text;
+	color: #111;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
 }
-h1:hover a.anchor,
-h2:hover a.anchor,
-h3:hover a.anchor,
-h4:hover a.anchor,
-h5:hover a.anchor,
-h6:hover a.anchor {
-    /*background: url("file:///Users/alyssamiao/Library/Application%20Support/images/modules/styleguide/para.png") no-repeat 10px center;*/
-    text-decoration: none;
+
+html {
+	font-size:16px;
 }
-h1 tt,
-h1 code {
-    font-size: inherit;
+
+#write {
+	max-width: 914px;
+	text-align: justify;
 }
-h2 tt,
-h2 code {
-    font-size: inherit;
+
+#write>h1:first-child {
+	margin-top: 2.75rem;
 }
-h3 tt,
-h3 code {
-    font-size: inherit;
+#write>h2:first-child {
+	margin-top: 1.75rem;
 }
-h4 tt,
-h4 code {
-    font-size: inherit;
+#write>h3:first-child {
+	margin-top: 1rem;
 }
-h5 tt,
-h5 code {
-    font-size: inherit;
-}
-h6 tt,
-h6 code {
-    font-size: inherit;
+#write>h4:first-child {
+	margin-top: 0.5rem;
 }
 h1 {
-    padding-bottom: .3em;
-    font-size: 2.25em;
-    line-height: 1.2;
-    border-bottom: 1px solid #eee;
+	font-weight: normal;
+	line-height: 4rem;
+	margin: 0 0 1.75rem;
+	padding: 20px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 4rem;
 }
 h2 {
-   padding-bottom: .3em;
-    font-size: 1.75em;
-    line-height: 1.225;
-    border-bottom: 1px solid #eee;
+	font-weight: normal;
+	line-height: 3rem;
+	margin: 0 0 1.9375rem;
+	padding: 0 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 3rem
 }
 h3 {
-    font-size: 1.5em;
-    line-height: 1.43;
+	font-weight: normal;
 }
 h4 {
-    font-size: 1.25em;
+	font-weight: normal;
 }
 h5 {
-    font-size: 1em;
+	font-size: 1.125rem;
+	font-weight: normal;
 }
 h6 {
-   font-size: 1em;
-    color: #777;
+	font-size: 1rem;
+	font-weight: bold;
 }
-p,
-blockquote,
-ul,
-ol,
-dl,
-table{
-    margin: 0.8em 0;
+p {
+	color: #111;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	margin: 0 0 1.25rem;
 }
-li>ol,
-li>ul {
-    margin: 0 0;
+#write>h3.md-focus:before {
+	left: -1.875rem;
+	top: 0.5rem;
+	padding: 2px;
 }
-hr {
-    height: 4px;
-    padding: 0;
-    margin: 16px 0;
-    background-color: #e7e7e7;
-    border: 0 none;
-    overflow: hidden;
-    box-sizing: content-box;
-    border-bottom: 1px solid #ddd;
+#write>h4.md-focus:before {
+	left: -1.875rem;
+	top: 0.3125rem;
+	padding: 2px;
 }
-
-body > h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
+#write>h5.md-focus:before {
+	left: -1.875rem;
+	top: 0.25rem;
+	padding: 2px;
 }
-body > h1:first-child {
-    margin-top: 0;
-    padding-top: 0;
+#write>h6.md-focus:before {
+	left: -1.875rem;
+	top: .125rem;
+	padding: 2px;
 }
-body > h1:first-child + h2 {
-    margin-top: 0;
-    padding-top: 0;
+/*@media screen and (min-width: 48em) {
+	.h1,
+	h1 {
+		font-size: 3.250rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.298rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.625rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.250rem;
+	}
+	.h5,
+	h5 {
+		font-size: 1.150rem;
+	}
+	.h6,
+	h6 {
+		font-size: 1rem;
+	}
+	#write>h4.md-focus:before,
+	#write>h5.md-focus:before,
+	#write>h6.md-focus:before {
+		top: 1px;
+	}
+	p {
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	table {
+		font-size: 1.25rem;
+	}
+}*/
+@media screen and (max-width: 48em) {
+	blockquote {
+		margin-left: 1rem;
+		margin-right: 0;
+		padding: 0.5em;
+	}
+	.h1,
+	h1 {
+		font-size: 2.827rem;
+	}
+	.h2,
+	h2 {
+		font-size: 1.999rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.413rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.250rem;
+	}
+	.h5,
+	h5 {
+		font-size: 1.150rem;
+	}
+	.h6,
+	h6 {
+		font-size: 1rem;
+	}
 }
-body > h3:first-child,
-body > h4:first-child,
-body > h5:first-child,
-body > h6:first-child {
-    margin-top: 0;
-    padding-top: 0;
+a,
+.md-def-url {
+	color: #990000;
+	text-decoration: none;
 }
-a:first-child h1,
-a:first-child h2,
-a:first-child h3,
-a:first-child h4,
-a:first-child h5,
-a:first-child h6 {
-    margin-top: 0;
-    padding-top: 0;
-}
-h1 p,
-h2 p,
-h3 p,
-h4 p,
-h5 p,
-h6 p {
-    margin-top: 0;
-}
-li p.first {
-    display: inline-block;
-}
-ul,
-ol {
-    padding-left: 30px;
-}
-ul:first-child,
-ol:first-child {
-    margin-top: 0;
-}
-ul:last-child,
-ol:last-child {
-    margin-bottom: 0;
-}
-blockquote {
-    border-left: 4px solid #dddddd;
-    padding: 0 15px;
-    color: #777777;
-}
-blockquote blockquote {
-    padding-right: 0;
+a:hover {
+	text-decoration: underline;
 }
 table {
-    padding: 0;
-    word-break: initial;
+	margin-bottom: 20px
 }
-table tr {
-    border-top: 1px solid #cccccc;
-    margin: 0;
-    padding: 0;
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.25rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
 }
-table tr:nth-child(2n) {
-    background-color: #f8f8f8;
+table th {
+	font-weight: bold
 }
-table tr th {
-    font-weight: bold;
-    border: 1px solid #cccccc;
-    border-bottom: 0;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
+table thead th {
+	vertical-align: bottom
 }
-table tr td {
-    border: 1px solid #cccccc;
-    text-align: left;
-    margin: 0;
-    padding: 6px 13px;
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
 }
-table tr th:first-child,
-table tr td:first-child {
-    margin-top: 0;
+table tbody+tbody {
+	border-top: 2px solid #ddd
 }
-table tr th:last-child,
-table tr td:last-child {
-    margin-bottom: 0;
+code, .md-fences {
+	padding: .5em;
+	/*background: #f0f0f0;*/
+	border: 1px solid #ccc;
+	padding: .1em;
+	font-size: 0.9em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
 }
-
-.CodeMirror-gutters {
-    border-right: 1px solid #ddd;
-}
-
-.md-fences,
-code,
-tt {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-    border-radius: 3px;
-    padding: 0;
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-}
-
 .md-fences {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding: 0.2em 1em;
-    padding-top: 8px;
-    padding-bottom: 6px;
+	margin: 0 0 20px;
+	font-size: 1em;
+	padding: 0.3em 1em;
+  	padding-top: 0.4em;
 }
 .task-list{
 	padding-left: 0;
 }
 
 .task-list-item {
-	padding-left:32px;
+	padding-left:2.125rem;
 }
 
 .task-list-item input {
-  top: 3px;
-  left: 8px;
+	top: 3px;
+
 }
 
-@media screen and (min-width: 914px) {
-    /*body {
-        width: 854px;
-        margin: 0 auto;
-    }*/
+.task-list-item input:before {
+	content: "";
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid gray;
+	background-color: #fdfdfd;
+	margin-left: 0;
+	margin-top: -0.8rem;
 }
-@media print {
-    html {
-        font-size: 13px;
-    }
-    table,
-    pre {
-        page-break-inside: avoid;
-    }
-    pre {
-        word-wrap: break-word;
-    }
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+	content: '\25FC';
+	/*◘*/
+	font-size: 0.8125rem;
+	line-height: 0.9375rem;
+	margin-top: -1rem;
 }
 
-.md-fences {
-	background-color: #f8f8f8;
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .task-list-item input:before {
+    	margin-top: -0.2rem;
+    }
+
+    .task-list-item input:checked:before,
+	.task-list-item input[checked]:before {
+		margin-top: -0.2rem;
+	}
+}
+
+blockquote {
+	margin: 0 0 1.11111rem;
+	padding: 0.5rem 1.11111rem 0 1.05556rem;
+	border-left: 1px solid gray;
+}
+blockquote,
+blockquote p {
+	line-height: 1.6;
+	color: #6f6f6f;
 }
 #write pre.md-meta-block {
-	padding: 1rem;
-    font-size: 85%;
-    line-height: 1.45;
-    background-color: #f7f7f7;
-    border: 0;
-    border-radius: 3px;
-    color: #777777;
-    margin-top: 0 !important;
+	min-height: 30px;
+	background: #f8f8f8;
+	padding: 1.5em;
+	font-weight: 300;
+	font-size: 1em;
+	padding-bottom: 1.5em;
+	padding-top: 3em;
+    margin-top: -1.5em;
+	color: #999;
+	
+	width: 100vw;
+	max-width: calc(100% + 60px);
+	margin-left: -30px;
+	border-left: 30px #f8f8f8 solid;
+	border-right: 30px #f8f8f8 solid;
 }
-
+.MathJax_Display {
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+p.mathjax-block,
+.mathjax-block {
+	padding-bottom: 0;
+}
 .mathjax-block>.code-tooltip {
-	bottom: .375rem;
-}
-
-#write>h3.md-focus:before{
-	left: -1.5625rem;
-	top: .375rem;
-}
-#write>h4.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h5.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
-}
-#write>h6.md-focus:before{
-	left: -1.5625rem;
-	top: .285714286rem;
+	bottom: 5px;
+	box-shadow: none;
 }
 .md-image>.md-meta {
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
-    padding: 2px 4px 0px 4px;
-    font-size: 0.9em;
-    color: inherit;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+.md-image>img {
+	margin-top: 2px;
+}
+.md-image>.md-meta:first-of-type:before {
+	padding-left: 4px;
 }
 
-.md-tag{
-	color: inherit;
+#typora-source {
+	color: #555;
 }
 
-.md-toc { 
-    margin-top:20px;
-    padding-bottom:20px;
+/** ui for windows **/
+#md-searchpanel {
+    border-bottom: 1px solid #ccc;
 }
 
-.sidebar-tabs {
-    border-bottom: none;
-}
-
-#typora-quick-open {
-    border: 1px solid #ddd;
-    background-color: #f8f8f8;
-}
-
-#typora-quick-open-item {
-    background-color: #FAFAFA;
-    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
-    border-style: solid;
-    border-width: 1px;
+#md-searchpanel .btn {
+    border: 1px solid #ccc;
 }
 
 #md-notification:before {
-    top: 10px;
+	top: 14px;
 }
 
-/** focus mode */
-.on-focus-mode blockquote {
-    border-left-color: rgba(85, 85, 85, 0.12);
+#md-notification {
+	background: #eee;
 }
 
-header, .context-menu, .megamenu-content, footer{
-    font-family: "Segoe UI", "Arial", sans-serif;
+.megamenu-menu-panel .btn {
+	border: 1px solid #ccc;
 }
 
-.file-node-content:hover .file-node-icon,
-.file-node-content:hover .file-node-open-state{
-    visibility: visible;
+#typora-sidebar {
+	box-shadow: none;
 }
 
-.mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
-    background-color: var(--side-bar-bg-color);
+.file-list-item ,
+.show-folder-name .file-list-item {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	line-height: 20px;
 }
 
-.md-lang {
-    color: #b4654d;
+.file-list-item-summary {
+	height: 40px;
+	line-height: 20px;
 }
-
 
 
 </style>
 </head>
 <body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name='header-n2855' class='md-header-anchor '></a>Baking List</h1><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n2855"><a class="md-toc-inner" style="" href="#header-n2855">Baking List</a></span><span class="md-toc-item md-toc-h2" data-ref="n3285"><a class="md-toc-inner" style="" href="#header-n3285">01 吐司</a></span><span class="md-toc-item md-toc-h3" data-ref="n2858"><a class="md-toc-inner" style="" href="#header-n2858">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n2884"><a class="md-toc-inner" style="" href="#header-n2884">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n2902"><a class="md-toc-inner" style="" href="#header-n2902">02 蛋挞</a></span><span class="md-toc-item md-toc-h3" data-ref="n2903"><a class="md-toc-inner" style="" href="#header-n2903">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n2926"><a class="md-toc-inner" style="" href="#header-n2926">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n3313"><a class="md-toc-inner" style="" href="#header-n3313">03 蛋糕卷</a></span><span class="md-toc-item md-toc-h3" data-ref="n2948"><a class="md-toc-inner" style="" href="#header-n2948">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n2989"><a class="md-toc-inner" style="" href="#header-n2989">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n3322"><a class="md-toc-inner" style="" href="#header-n3322">04 黑森林蛋糕</a></span><span class="md-toc-item md-toc-h3" data-ref="n3023"><a class="md-toc-inner" style="" href="#header-n3023">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n3079"><a class="md-toc-inner" style="" href="#header-n3079">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n3331"><a class="md-toc-inner" style="" href="#header-n3331">05 苹果派</a></span><span class="md-toc-item md-toc-h3" data-ref="n3128"><a class="md-toc-inner" style="" href="#header-n3128">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n3178"><a class="md-toc-inner" style="" href="#header-n3178">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n3338"><a class="md-toc-inner" style="" href="#header-n3338">06 披萨</a></span><span class="md-toc-item md-toc-h3" data-ref="n3221"><a class="md-toc-inner" style="" href="#header-n3221">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n3244"><a class="md-toc-inner" style="" href="#header-n3244">II. 制作方式</a></span></p></div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n3285' class='md-header-anchor '></a>01 吐司</h2><h3><a name='header-n2858' class='md-header-anchor '></a>I. 材料</h3><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>高筋面粉</td><td>320g</td></tr><tr><td>鸡蛋</td><td>45g</td></tr><tr><td>淡奶油</td><td>180g</td></tr><tr><td>盐</td><td>4g</td></tr><tr><td>牛奶</td><td>35g</td></tr><tr><td>白砂糖</td><td>60g</td></tr><tr><td>酵母</td><td>5g</td></tr></tbody></table></figure><h3><a name='header-n2884' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>除鸡蛋以外的材料，用来揉面团</li><li>发酵60分钟（至少发到两倍大）（记得盖盖子，可以用烤箱保温发酵）</li><li>将面团取出排气，整形，放入吐司盒中二次发酵至九分满（450g吐司盒）</li><li>表面刷蛋液</li><li>烤箱预热180度，最下层40分钟出炉。（目前已经试过，不可行会过热，建议120度，中层再试）</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n2902' class='md-header-anchor '></a>02 蛋挞</h2><h3><a name='header-n2903' class='md-header-anchor '></a>I. 材料</h3><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>蛋挞皮</td><td>7个</td></tr><tr><td>纯牛奶</td><td>11g</td></tr><tr><td>细砂糖</td><td>25g</td></tr><tr><td>淡奶油</td><td>130g</td></tr><tr><td>蛋黄</td><td>3个</td></tr><tr><td>低筋面粉</td><td>10g</td></tr></tbody></table></figure><h3><a name='header-n2926' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>淡奶油加入细砂糖搅拌至溶解</li><li>加入纯牛奶搅拌片刻</li><li>加入蛋黄和低筋面粉搅拌均匀</li><li>过滤</li><li>倒入蛋挞皮，七分满</li><li>200度25分钟</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n3313' class='md-header-anchor '></a>03 蛋糕卷</h2><h3><a name='header-n2948' class='md-header-anchor '></a>I. 材料</h3><ol start='' ><li>蛋糕胚</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>鸡蛋</td><td>4个</td></tr><tr><td>植物油</td><td>40g</td></tr><tr><td>奶油</td><td>40g</td></tr><tr><td>低筋面粉</td><td>40g</td></tr><tr><td>糖粉</td><td>40g</td></tr><tr><td>柠檬汁</td><td>几滴</td></tr></tbody></table></figure><ol start='2' ><li>奶油馅</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>淡奶油</td><td>200个</td></tr><tr><td>白砂糖</td><td>20g</td></tr></tbody></table></figure><h3><a name='header-n2989' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li><strong>蛋黄</strong>加30g糖粉，用电动打蛋器打至稍微发白</li><li>加入植物油和牛奶依次打匀</li><li>筛入低筋面粉</li><li>电动打蛋器打几十秒，期间可用橡皮刮刀将周围的面粉拌入</li><li>蛋清滴几滴柠檬汁，打至粗泡后，粉刺加入剩余糖粉，打到湿性偏干的状态</li><li>将蛋白糊的1/3拌入蛋黄糊，拌匀，在倒回剩余蛋白糊中拌匀（要快，避免消泡）</li><li>将蛋黄糊倒入铺有油纸的烤盘中，预热180度，中层，上下火，18分钟</li><li>将蛋糕胚取出散热</li><li>将蛋糕胚倒扣到另一张油纸上，撕下原来的油纸，修好四边</li><li>在上面抹上打发好的淡奶油，用擀面杖和油纸辅助卷好即可</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n3322' class='md-header-anchor '></a>04 黑森林蛋糕</h2><h3><a name='header-n3023' class='md-header-anchor '></a>I. 材料</h3><ol start='' ><li>蛋糕胚</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>鸡蛋</td><td>4个</td></tr><tr><td>玉米油</td><td>40g</td></tr><tr><td>无糖可可粉</td><td>15g</td></tr><tr><td>柠檬汁</td><td>...</td></tr><tr><td>低筋面粉</td><td>40g</td></tr><tr><td>牛奶</td><td>40g</td></tr><tr><td>细砂糖（蛋清）</td><td>60g</td></tr><tr><td>细砂糖（蛋黄）</td><td>20g</td></tr></tbody></table></figure><ol start='2' ><li>装饰</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>细砂糖（奶油中）</td><td>15g</td></tr><tr><td>可可粉（奶油中）</td><td>10g</td></tr><tr><td>黑巧克力</td><td>40g</td></tr><tr><td>糖粉</td><td>...</td></tr><tr><td>淡奶油</td><td>200ml</td></tr></tbody></table></figure><h3><a name='header-n3079' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>蛋黄内加入细砂糖，至糖融化即可</li><li>分三次加入牛奶与色拉油，搅拌均匀</li><li>筛入可可粉和面粉</li><li>用橡皮刀轻轻拌均匀</li><li>烤箱180度预热10分钟</li><li>蛋清打发</li><li>1/3蛋白糊放入面糊中，拌匀（从底向上拌，不要划圈，避免消泡）</li><li>依照上一步，依次拌入1/3，1/3蛋白糊</li><li>将面糊倒入8寸戚风模具，用力震几下阵出大气泡</li><li>烤箱中层，180度，上下火，60分钟</li><li>拿出来后迅速倒扣在烤架上然后冷却脱模</li><li>将蛋糕写成厚度一致的3片，放入冰箱冷藏</li><li>奶油加入细砂糖和可可粉打发</li><li>逐层刷奶油，叠好，再在全表面上抹奶油</li><li>将黑巧刮成碎屑黏在上面</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n3331' class='md-header-anchor '></a>05 苹果派</h2><h3><a name='header-n3128' class='md-header-anchor '></a>I. 材料</h3><ol start='' ><li>派皮</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>低筋面粉</td><td>150g</td></tr><tr><td>黄油</td><td>50g</td></tr><tr><td>全蛋液</td><td>58g</td></tr><tr><td>糖粉</td><td>20g</td></tr></tbody></table></figure><ol start='2' ><li>苹果馅</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>苹果</td><td>2个</td></tr><tr><td>柠檬汁</td><td>1小勺</td></tr><tr><td>细砂糖</td><td>25g</td></tr><tr><td>盐</td><td>1g</td></tr><tr><td>黄油</td><td>8g</td></tr><tr><td>玉米淀粉</td><td>5g</td></tr><tr><td>全蛋液</td><td>适量（刷表面用）</td></tr></tbody></table></figure><h3><a name='header-n3178' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>黄油软化之后，倒入低筋粉和糖粉，用手不断揉搓，搓成粗颗粒状</li><li>在搓匀的面粉中加入全蛋液，揉成面团（稍微揉一下就行，不要太久，不光滑也行）</li><li>面团放入冰箱冷藏松弛20分钟以上</li><li>苹果去皮切小粒</li><li>炒锅内放入8g黄油，倒入苹果粒，稍微翻炒一下，倒入细砂糖和盐；加入调味料后会出水，用中火慢慢煮干水分；玉米淀粉加水搅匀，倒入锅中快速反差均匀，出锅放凉备用</li><li>在面板上撒一层薄粉，将派皮分为2:1，把大的一份在撒了粉的面板上擀成比派盘大一圈的圆形</li><li>把派皮铺到派盘上，用手指轻压派皮，使派皮紧贴派盘，用擀面杖在派盘上压一下，将多余的派皮切断</li><li>用叉子在派皮底部均匀地扎出小孔</li><li>将预留的小份派皮擀成薄片，用刀切成约1cm的长度</li><li>在派盘内填入苹果馅</li><li>用条状派皮编织成网格状，然后去掉边缘多余的部分</li><li>表面刷上全蛋液</li><li>烤箱预热190度，15分钟后转170度，20分钟（上层）</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n3338' class='md-header-anchor '></a>06 披萨</h2><h3><a name='header-n3221' class='md-header-anchor '></a>I. 材料</h3><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>高筋面粉</td><td>110g</td></tr><tr><td>盐</td><td>1.5g</td></tr><tr><td>糖</td><td>2.5g</td></tr><tr><td>酵母粉</td><td>2.5g</td></tr><tr><td>橄榄油</td><td>10g</td></tr><tr><td>温水</td><td>65g</td></tr></tbody></table></figure><h3><a name='header-n3244' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>面饼一次发酵就好，不要二次发酵</li><li>将底铺好</li><li>肉质能用熟肉，蔬菜要少放不然会脱水</li><li>火腿片、培根片铺底；然后蔬菜肉粒；最后知识</li><li>温度至少220，中层，考到芝士融化表面金黄即可</li></ol></div>
+<div  id='write'  class = 'is-mac'><h1><a name='header-n2' class='md-header-anchor '></a>Baking List</h1><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n2"><a class="md-toc-inner" href="#header-n2">Baking List</a></span><span class="md-toc-item md-toc-h2" data-ref="n13"><a class="md-toc-inner" href="#header-n13">01 吐司</a></span><span class="md-toc-item md-toc-h3" data-ref="n14"><a class="md-toc-inner" href="#header-n14">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n40"><a class="md-toc-inner" href="#header-n40">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n67"><a class="md-toc-inner" href="#header-n67">02 蛋挞</a></span><span class="md-toc-item md-toc-h3" data-ref="n68"><a class="md-toc-inner" href="#header-n68">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n91"><a class="md-toc-inner" href="#header-n91">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n120"><a class="md-toc-inner" href="#header-n120">03 蛋糕卷</a></span><span class="md-toc-item md-toc-h3" data-ref="n121"><a class="md-toc-inner" href="#header-n121">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n162"><a class="md-toc-inner" href="#header-n162">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n203"><a class="md-toc-inner" href="#header-n203">04 黑森林蛋糕</a></span><span class="md-toc-item md-toc-h3" data-ref="n204"><a class="md-toc-inner" href="#header-n204">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n260"><a class="md-toc-inner" href="#header-n260">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n316"><a class="md-toc-inner" href="#header-n316">05 苹果派</a></span><span class="md-toc-item md-toc-h3" data-ref="n317"><a class="md-toc-inner" href="#header-n317">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n367"><a class="md-toc-inner" href="#header-n367">II. 制作方式</a></span><span class="md-toc-item md-toc-h2" data-ref="n417"><a class="md-toc-inner" href="#header-n417">06 披萨</a></span><span class="md-toc-item md-toc-h3" data-ref="n418"><a class="md-toc-inner" href="#header-n418">I. 材料</a></span><span class="md-toc-item md-toc-h3" data-ref="n441"><a class="md-toc-inner" href="#header-n441">II. 制作方式</a></span></p></div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n13' class='md-header-anchor '></a>01 吐司</h2><h3><a name='header-n14' class='md-header-anchor '></a>I. 材料</h3><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>高筋面粉</td><td>320g</td></tr><tr><td>鸡蛋</td><td>45g</td></tr><tr><td>淡奶油</td><td>180g</td></tr><tr><td>盐</td><td>4g</td></tr><tr><td>牛奶</td><td>35g</td></tr><tr><td>白砂糖</td><td>60g</td></tr><tr><td>酵母</td><td>5g</td></tr></tbody></table></figure><h3><a name='header-n40' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>除鸡蛋以外的材料，用来揉面团</li><li>发酵60分钟（至少发到两倍大）（记得盖盖子，可以用烤箱保温发酵）</li><li>将面团取出排气，整形，放入吐司盒中二次发酵至九分满（450g吐司盒）</li><li>表面刷蛋液</li><li>烤箱预热180度，最下层40分钟出炉。（目前已经试过，不可行会过热，建议120度，中层再试）</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n67' class='md-header-anchor '></a>02 蛋挞</h2><h3><a name='header-n68' class='md-header-anchor '></a>I. 材料</h3><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>蛋挞皮</td><td>7个</td></tr><tr><td>纯牛奶</td><td>11g</td></tr><tr><td>细砂糖</td><td>25g</td></tr><tr><td>淡奶油</td><td>130g</td></tr><tr><td>蛋黄</td><td>3个</td></tr><tr><td>低筋面粉</td><td>10g</td></tr></tbody></table></figure><h3><a name='header-n91' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>淡奶油加入细砂糖搅拌至溶解</li><li>加入纯牛奶搅拌片刻</li><li>加入蛋黄和低筋面粉搅拌均匀</li><li>过滤</li><li>倒入蛋挞皮，七分满</li><li>200度25分钟</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n120' class='md-header-anchor '></a>03 蛋糕卷</h2><h3><a name='header-n121' class='md-header-anchor '></a>I. 材料</h3><ol start='' ><li>蛋糕胚</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>鸡蛋</td><td>4个</td></tr><tr><td>植物油</td><td>40g</td></tr><tr><td>奶油</td><td>40g</td></tr><tr><td>低筋面粉</td><td>40g</td></tr><tr><td>糖粉</td><td>40g</td></tr><tr><td>柠檬汁</td><td>几滴</td></tr></tbody></table></figure><ol start='2' ><li>奶油馅</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>淡奶油</td><td>200个</td></tr><tr><td>白砂糖</td><td>20g</td></tr></tbody></table></figure><h3><a name='header-n162' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li><strong>蛋黄</strong>加30g糖粉，用电动打蛋器打至稍微发白</li><li>加入植物油和牛奶依次打匀</li><li>筛入低筋面粉</li><li>电动打蛋器打几十秒，期间可用橡皮刮刀将周围的面粉拌入</li><li>蛋清滴几滴柠檬汁，打至粗泡后，粉刺加入剩余糖粉，打到湿性偏干的状态</li><li>将蛋白糊的1/3拌入蛋黄糊，拌匀，在倒回剩余蛋白糊中拌匀（要快，避免消泡）</li><li>将蛋黄糊倒入铺有油纸的烤盘中，预热180度，中层，上下火，18分钟</li><li>将蛋糕胚取出散热</li><li>将蛋糕胚倒扣到另一张油纸上，撕下原来的油纸，修好四边</li><li>在上面抹上打发好的淡奶油，用擀面杖和油纸辅助卷好即可</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n203' class='md-header-anchor '></a>04 黑森林蛋糕</h2><h3><a name='header-n204' class='md-header-anchor '></a>I. 材料</h3><ol start='' ><li>蛋糕胚</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>鸡蛋</td><td>4个</td></tr><tr><td>玉米油</td><td>40g</td></tr><tr><td>无糖可可粉</td><td>15g</td></tr><tr><td>柠檬汁</td><td>...</td></tr><tr><td>低筋面粉</td><td>40g</td></tr><tr><td>牛奶</td><td>40g</td></tr><tr><td>细砂糖（蛋清）</td><td>60g</td></tr><tr><td>细砂糖（蛋黄）</td><td>20g</td></tr></tbody></table></figure><ol start='2' ><li>装饰</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>细砂糖（奶油中）</td><td>15g</td></tr><tr><td>可可粉（奶油中）</td><td>10g</td></tr><tr><td>黑巧克力</td><td>40g</td></tr><tr><td>糖粉</td><td>...</td></tr><tr><td>淡奶油</td><td>200ml</td></tr></tbody></table></figure><h3><a name='header-n260' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>蛋黄内加入细砂糖，至糖融化即可</li><li>分三次加入牛奶与色拉油，搅拌均匀</li><li>筛入可可粉和面粉</li><li>用橡皮刀轻轻拌均匀</li><li>烤箱180度预热10分钟</li><li>蛋清打发</li><li>1/3蛋白糊放入面糊中，拌匀（从底向上拌，不要划圈，避免消泡）</li><li>依照上一步，依次拌入1/3，1/3蛋白糊</li><li>将面糊倒入8寸戚风模具，用力震几下阵出大气泡</li><li>烤箱中层，180度，上下火，60分钟</li><li>拿出来后迅速倒扣在烤架上然后冷却脱模</li><li>将蛋糕写成厚度一致的3片，放入冰箱冷藏</li><li>奶油加入细砂糖和可可粉打发</li><li>逐层刷奶油，叠好，再在全表面上抹奶油</li><li>将黑巧刮成碎屑黏在上面</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n316' class='md-header-anchor '></a>05 苹果派</h2><h3><a name='header-n317' class='md-header-anchor '></a>I. 材料</h3><ol start='' ><li>派皮</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>低筋面粉</td><td>150g</td></tr><tr><td>黄油</td><td>50g</td></tr><tr><td>全蛋液</td><td>58g</td></tr><tr><td>糖粉</td><td>20g</td></tr></tbody></table></figure><ol start='2' ><li>苹果馅</li></ol><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>苹果</td><td>2个</td></tr><tr><td>柠檬汁</td><td>1小勺</td></tr><tr><td>细砂糖</td><td>25g</td></tr><tr><td>盐</td><td>1g</td></tr><tr><td>黄油</td><td>8g</td></tr><tr><td>玉米淀粉</td><td>5g</td></tr><tr><td>全蛋液</td><td>适量（刷表面用）</td></tr></tbody></table></figure><h3><a name='header-n367' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>黄油软化之后，倒入低筋粉和糖粉，用手不断揉搓，搓成粗颗粒状</li><li>在搓匀的面粉中加入全蛋液，揉成面团（稍微揉一下就行，不要太久，不光滑也行）</li><li>面团放入冰箱冷藏松弛20分钟以上</li><li>苹果去皮切小粒</li><li>炒锅内放入8g黄油，倒入苹果粒，稍微翻炒一下，倒入细砂糖和盐；加入调味料后会出水，用中火慢慢煮干水分；玉米淀粉加水搅匀，倒入锅中快速反差均匀，出锅放凉备用</li><li>在面板上撒一层薄粉，将派皮分为2:1，把大的一份在撒了粉的面板上擀成比派盘大一圈的圆形</li><li>把派皮铺到派盘上，用手指轻压派皮，使派皮紧贴派盘，用擀面杖在派盘上压一下，将多余的派皮切断</li><li>用叉子在派皮底部均匀地扎出小孔</li><li>将预留的小份派皮擀成薄片，用刀切成约1cm的长度</li><li>在派盘内填入苹果馅</li><li>用条状派皮编织成网格状，然后去掉边缘多余的部分</li><li>表面刷上全蛋液</li><li>烤箱预热190度，15分钟后转170度，20分钟（上层）</li></ol><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><hr /><h2><a name='header-n417' class='md-header-anchor '></a>06 披萨</h2><h3><a name='header-n418' class='md-header-anchor '></a>I. 材料</h3><figure><table><thead><tr><th>材料名</th><th>用量</th></tr></thead><tbody><tr><td>高筋面粉</td><td>110g</td></tr><tr><td>盐</td><td>1.5g</td></tr><tr><td>糖</td><td>2.5g</td></tr><tr><td>酵母粉</td><td>2.5g</td></tr><tr><td>橄榄油</td><td>10g</td></tr><tr><td>温水</td><td>65g</td></tr></tbody></table></figure><h3><a name='header-n441' class='md-header-anchor '></a>II. 制作方式</h3><ol start='' ><li>面饼一次发酵就好，不要二次发酵</li><li>将底铺好</li><li>肉质能用熟肉，蔬菜要少放不然会脱水</li><li>火腿片、培根片铺底；然后蔬菜肉粒；最后知识</li><li>温度至少220，中层，考到芝士融化表面金黄即可</li></ol></div>
 </body>
 </html>
